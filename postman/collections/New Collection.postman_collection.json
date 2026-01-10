@@ -1,0 +1,38 @@
+{
+  "info": {
+    "_postman_id": "e6e049a7-452a-4153-97a1-e6ab7372400f",
+    "name": "Users",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Profie",
+      "id": "f4d38105-3fec-460d-9d14-f3fc47ccff16",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/users/profile",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "users",
+            "profile"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

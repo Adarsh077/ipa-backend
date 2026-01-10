@@ -9,15 +9,53 @@
       "name": "Register",
       "id": "3e909164-d3c9-440a-9d8e-2eeccc2c1178",
       "request": {
-        "method": "GET",
+        "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Adarsh\",\n    \"email\": \"adarshco0771@gmail.com\",\n    \"password\": \"Adarsh123$\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
-          "raw": "{{baseurl}}/",
+          "raw": "{{baseurl}}/auth/register",
           "host": [
             "{{baseurl}}"
           ],
           "path": [
-            ""
+            "auth",
+            "register"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "id": "75fb49c6-cd90-4606-89de-dee718c88fca",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"adarshco0771@gmail.com\",\n    \"password\": \"Adarsh123$\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/auth/login",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "auth",
+            "login"
           ]
         }
       },
