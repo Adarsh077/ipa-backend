@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "40c32005-0ca4-4a36-a2a1-5bab667c15f5",
+    "name": "Files",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Generate Upload Signed Url",
+      "id": "2231a30c-ab0b-4f39-9bb2-65bada0c840e",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"filename\": \"adarsh-sengani.pdf\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseurl}}/files",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "files"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Generate Get Signed Url",
+      "id": "b4a8bc00-9c5d-46c9-9548-60240a77dfac",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/files?filename=adarsh-sengani.pdf",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            "files"
+          ],
+          "query": [
+            {
+              "key": "filename",
+              "value": "adarsh-sengani.pdf",
+              "type": "text",
+              "uuid": "94fec8a8-518d-43df-a3e1-74a9fa0686f8"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
