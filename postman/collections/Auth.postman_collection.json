@@ -1,0 +1,27 @@
+{
+  "info": {
+    "_postman_id": "20f14539-7222-4eba-86f0-dc415e555ba6",
+    "name": "Auth",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "id": "3e909164-d3c9-440a-9d8e-2eeccc2c1178",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseurl}}/",
+          "host": [
+            "{{baseurl}}"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
