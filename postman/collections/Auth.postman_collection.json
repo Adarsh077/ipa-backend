@@ -13,7 +13,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"name\": \"Adarsh\",\n    \"email\": \"adarshco0771@gmail.com\",\n    \"password\": \"Adarsh123$\"\n}",
+          "raw": "{\n    \"name\": \"Adarsh\",\n    \"email\": \"adarshco0772@gmail.com\",\n    \"password\": \"Adarsh123$\"\n}",
           "options": {
             "raw": {
               "language": "json"
