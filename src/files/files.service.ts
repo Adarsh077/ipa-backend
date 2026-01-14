@@ -24,7 +24,7 @@ export class FilesService {
   async generateUploadSignedUrl(filename: string): Promise<string> {
     const command = new PutObjectCommand({
       Bucket: this.configService.getOrThrow('S3_BUCKET_NAME'),
-      Key: filename,
+      Key: `insurances/${filename}`,
       ContentType: 'application/pdf',
     });
 
