@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { InsurancesController } from './insurances.controller';
 import { InsuranceService } from './insurance.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Insurance, InsuranceSchema } from './insurances.schema';
@@ -13,7 +12,6 @@ import { UserModule } from 'src/user/user.module';
     ]),
     UserModule,
   ],
-  controllers: [InsurancesController],
   providers: [InsuranceService, InsuranceResolver],
 })
 export class InsurancesModule {}

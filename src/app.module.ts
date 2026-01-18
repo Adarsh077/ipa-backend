@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuthModule } from './auth/auth.module';
-import { UserController } from './user/user.controller';
 import { UserModule } from './user/user.module';
 import { InsurancesModule } from './insurances/insurances.module';
 import { FilesModule } from './files/files.module';
@@ -30,7 +29,6 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
     InsurancesModule,
     FilesModule,
   ],
-  controllers: [UserController],
   providers: [],
 })
 export class AppModule {}
