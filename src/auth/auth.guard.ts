@@ -7,23 +7,25 @@ import {
 import { JwtService } from '@nestjs/jwt';
 import { Request } from 'express';
 import { JwtPayload } from './auth.interface';
+import { GqlExecutionContext } from '@nestjs/graphql';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
   constructor(private jwtService: JwtService) {}
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
-    const request = context.switchToHttp().getRequest<Request>();
+    const ctx = GqlExecutionContext.create(context);
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    const request = ctx.getContext().req as Request;
 
     const token = this.extractTokenFromHeader(request);
-
     if (!token) {
       throw new UnauthorizedException();
     }
 
     try {
       const payload = await this.jwtService.verifyAsync<JwtPayload>(token);
-
       request['user'] = payload;
     } catch {
       throw new UnauthorizedException();

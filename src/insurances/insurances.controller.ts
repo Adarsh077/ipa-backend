@@ -1,14 +1,14 @@
 import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { CreateInsuranceDto } from './insurance.dto';
 import { Insurance } from './insurances.schema';
-import { InsurancesService } from './insurances.service';
+import { InsuranceService } from './insurance.service';
 import { GetUser } from 'src/common/decorators/get-user.decorator';
 import { AuthGuard } from 'src/auth/auth.guard';
 
 @Controller('insurances')
 @UseGuards(AuthGuard)
 export class InsurancesController {
-  constructor(private insurancesService: InsurancesService) {}
+  constructor(private insurancesService: InsuranceService) {}
 
   @Post()
   async create(

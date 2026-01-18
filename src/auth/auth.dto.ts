@@ -1,15 +1,35 @@
-import { PartialType } from '@nestjs/mapped-types';
+import { Field, InputType, ObjectType } from '@nestjs/graphql';
 import { IsEmail, IsString, IsStrongPassword } from 'class-validator';
 
+@InputType()
 export class CreateUserDto {
+  @Field()
   @IsString()
   name: string;
 
+  @Field()
   @IsEmail()
   email: string;
 
+  @Field()
   @IsStrongPassword()
   password: string;
 }
 
-export class LoginUserDto extends PartialType(CreateUserDto) {}
+@InputType()
+export class LoginUserDto {
+  @Field()
+  @IsEmail()
+  email: string;
+
+  @Field()
+  @IsStrongPassword()
+  password: string;
+}
+
+@ObjectType()
+export class AuthPayload {
+  @Field()
+  @IsString()
+  token: string;
+}

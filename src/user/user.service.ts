@@ -38,6 +38,12 @@ export class UserService {
     return { user };
   }
 
+  async findAll(): Promise<{ users: UserDocument[] }> {
+    const users = await this.userModel.find().select('name email');
+
+    return { users };
+  }
+
   async findById(userId: string): Promise<{ user: UserDocument }> {
     const user = await this.userModel.findById(userId).select('name email');
 

@@ -6,11 +6,18 @@ import { UserController } from './user/user.controller';
 import { UserModule } from './user/user.module';
 import { InsurancesModule } from './insurances/insurances.module';
 import { FilesModule } from './files/files.module';
+import { GraphQLModule } from '@nestjs/graphql';
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
+    }),
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
+      graphiql: true,
+      autoSchemaFile: true,
     }),
     MongooseModule.forRootAsync({
       useFactory: (configService: ConfigService) => ({
