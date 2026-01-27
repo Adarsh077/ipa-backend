@@ -7,6 +7,7 @@ import { InsurancesModule } from './insurances/insurances.module';
 import { FilesModule } from './files/files.module';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -30,5 +31,6 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
     FilesModule,
   ],
   providers: [],
+  controllers: [AppController],
 })
 export class AppModule {}
