@@ -78,7 +78,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"filepath\": \"https://franklin-ipa-dev.s3.ap-south-1.amazonaws.com/U171575587_Policy%20Information%20Page.pdf?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEHIaCmFwLXNvdXRoLTEiRzBFAiAGAbaaYRYcHTJOZi1WweprKWk5IMO6ez1Vd%2BpSi0rguwIhALxMJ%2FlpVyCCrIK4Bl311t5fpeCCPakrux7DxgJrA5ABKtIDCDsQAhoMMzYxNzE4MDk1NTQ0Igx5jLll4uiJFnwYYTwqrwOfFYKB1zDvsRLwTc4yWLUWI7tbYemuGYvf3f7cPB68HDWpmbcCPDg4VTtnYXmjqPENLMWcEHd5A3RJGpziBBiCDNelSJ%2FP9dcQZzUtKVaOAkhbjb7paLvoSEDf0zHUUv9ELz3753U4DuIf0oo9%2FisNc99%2BdS4%2FG3aGdsojV9XrYUay8xB9HTXcoatDMxmbwKBvSr6W8VxjJ2%2BX%2FNaaTyHQALeLxUZ5xPaEyOZluuCG3QZWhf2ALMG9M71Oee9oOoYEPO516qxiG9KpPgbZ5ld0j99vJ5XvwPZhLKgzXTvDiTQ4HwJw7kmiPvZYyQI7tgErZvnMVMiJppWrW3HWisvPaKN7jz1Zf2yca53JKex7L4YFDTTe952BL3kWDkGrVS1XzvVoyxCYLwsFNuVttvoUWamPvXmV00E8b3ehl1PGRjsq0v4zbZqaNF1adN19uKI9WfOwU288iZ65fg4EMcXr7Qhoyj03D0gpf0c5BBGIGhI8Rq8o94ONHEHlMga7eZW%2F%2Bi9vO2Jmfvy1jTMKdxrlDCMiC%2BfgTH2iPhaAUKARtmG%2B%2FFFFohnuHNWHj9X41TCRqdzLBjreAnX40Xb71LmakjjK9znF%2BCz99HtZ1Zi%2Fv7SY4oUQpCZrWwc%2FO%2B62RWmhEPbspjDxwD4GrzrwpZDnb15jfKdQOw%2BlQ5xzR6TdjEyyUdzNA565rDdvqG6hw71yZMGyriQQquZGC1XVB%2Fb9EniwNVIIkFgCU%2FHA5boFtiMwsaU6XKr%2BnVhTpaI4lnyUASzc%2FZOT%2FhVjDHghvGw1MO9rrTiDHPVbmXRvHQ2WrQl021YGqvmxw9aKv5pIPlBaupBwcWsWTqI7JinjY%2FBzIkbg18nm0PxAO9MFYIamPbpcl4DUbHR%2BOQrnRvaedVWuJeZmc2Swy9R9elexFq373E6aAs3YirKYbJRr8komnaBGikWesOP0BQRRggnMPK0t7jv728XpbVHx%2Bqokny%2BLl%2BbBuwVt6osa1qp7aoqnABqkmpki8mESZU8n%2FICnyHaXcyLf9cUt1WazMx%2FBps5XwyAjE5ny&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAVIOAUD24CBQDF7P2%2F20260126%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260126T100959Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=2c1d19e550068cbfbe6e3b61633263edba65bce0869e5b8247971ee2639a8be4\"\n}",
+          "raw": "{\n    \"filepath\": \"https://franklin-ipa-dev.s3.ap-south-1.amazonaws.com/U171575587_Policy%20Information%20Page.pdf?response-content-disposition=inline&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiEAk5q6qBxiM4l%2BHhrqpY2IX05%2BrR5JdR6E8Ar0FsntK%2FECIB19NQ1cU7nV7lCwJVcd%2FcJFO17rRFhxZR0p1cKMP4mwKtsDCL7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQAhoMMzYxNzE4MDk1NTQ0IgxTr7Es5OR%2BZDTzabAqrwNG1pnQTd1Ses0iokehAKU97Zi%2FxzWW7fc%2BkcgMwbb6ZUMd5ErjVqlieeMIBpGro%2BwBbujHNuoYlDv3b2oX4t4oU%2FH94ORXWoRaFgoFrI4pJHMFGZvFTBbvyyw%2BrPlgT40bk4EF6MJvupn8iDUNfkh213ZE6OxtCE3pQZ7jagtxIINMoJemlff%2F%2FnWr8LwUJq3AuKaLbiriOsLyM%2BqD8%2Fs017ZVIc%2FrTQv03X6kFa5IBV4xjW8QbaWfeyIBDgjwb6beOwIIbyyJSVDHmyjWRLs2m5jyJ7ru50GnvpOVWtIvKWsss7gp9K9J7yqtTvpMCCokv%2BCMTdqlliYownVAXZVRijTTkWxlclhjzwInNMzWptO%2FEug9W256c6OTzkLMj5COLumYsX%2FCE6lgjAsuO2%2Bzq6M9gfC8JW5I0%2F8hDbO2VpD2Mt4yywzoPU6dz3YOWnRf6ExCAXlUwMZLpEsxqFwVG4H2JQYPP1tL207br4uDG2GmPyXj1r8kGBHcmmnvFBjouxX0gaLtvceNEaAKJXmdJynjlsG5OH%2BWuerTppIPzjlzpgFeKCr9rTbmxqjfLDC7nerMBjreAty206atpl69QQ%2BButTF0qxFiJ9tozSaeKFR9gIVWc%2BNoeoQ3xlSW%2FAAjMXYhaebS9yApp16xjRv3TfjA3%2FzstkfQdd%2BzgAF1yrhFTnaz%2B7Chza92YFqxtXj4k9SzTO2K6CE1SXK2t2G1blfiQYZ9h%2BNrjmWCM7KhMKjTqBxt9%2FZHrA6Nz8AEVKSc539Wpa%2B9eDwgIE6szVD9FFXjBTP2PF%2BzjtxAVE2w7WJudNtj0yhCft%2FxHdZ6y0v1gmetf%2FP8usz9p0GbqMkZrnuGgCcn2r%2Bge7Q5T6%2FU2myAxXzYjN%2FiOJMQMUwhDMR8ltgQe0poFd9vsSTo0CJXzaKTKtqdp1fAS796UZtEtAj0%2BvYdEik21tFWE5wngPc6KkMBSn7BJnPXT6YgetR3gqaVgkuLXdHWkHd4K7CCxn5tpaMW1QuEsoXs3qSYd4bP1EbRDgUGaY3%2BX6sYCusa7R1b2at&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAVIOAUD24ADNJXH7K%2F20260222%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260222T050640Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=5b140fd5d510d802813c911602cc384b5d782b3e0d78caad2ccad162aae14e97\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -86,17 +86,9 @@
           }
         },
         "url": {
-          "raw": "https://pvf2hn2kjljiqdsxhro62wsine0kpxzv.lambda-url.ap-south-1.on.aws/",
-          "protocol": "https",
+          "raw": "{{parser_base_url}}",
           "host": [
-            "pvf2hn2kjljiqdsxhro62wsine0kpxzv",
-            "lambda-url",
-            "ap-south-1",
-            "on",
-            "aws"
-          ],
-          "path": [
-            ""
+            "{{parser_base_url}}"
           ]
         }
       },
