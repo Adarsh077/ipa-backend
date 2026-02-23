@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose, { HydratedDocument } from 'mongoose';
-import { InsuranceStatus } from './insurance.enum';
+import { InsuranceStatus, PolicyFrequency } from './insurance.enum';
 import { User } from 'src/user/user.schema';
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 
@@ -32,9 +32,38 @@ export class Insurance {
       InsuranceStatus.Created,
       InsuranceStatus.Processing,
       InsuranceStatus.Processed,
+      InsuranceStatus.Failed,
     ],
   })
   status: InsuranceStatus;
+
+  @Field({ nullable: true })
+  @Prop({ required: false, type: Date })
+  next_due_date?: Date;
+
+  @Field({ nullable: true })
+  @Prop({ required: false })
+  policy_holder_name?: string;
+
+  @Field({ nullable: true })
+  @Prop({ required: false, type: Date })
+  policy_start_date?: Date;
+
+  @Field({ nullable: true })
+  @Prop({ required: false })
+  premium_amount?: string;
+
+  @Field({ nullable: true })
+  @Prop({ required: false, type: Date })
+  last_premium_due_date?: Date;
+
+  @Field(() => PolicyFrequency, { nullable: true })
+  @Prop({
+    required: false,
+    type: String,
+    enum: [PolicyFrequency.Monthly, PolicyFrequency.Yearly],
+  })
+  policy_frequency?: PolicyFrequency;
 }
 
 export const InsuranceSchema = SchemaFactory.createForClass(Insurance);

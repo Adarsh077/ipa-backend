@@ -37,8 +37,6 @@ export class InsuranceResolver {
     @GetUser('sub') userId: string,
     @Args('createInsuranceInput') createInsuranceInput: CreateInsuranceDto,
   ) {
-    this.logger.debug(createInsuranceInput);
-
     const insurance = await this.insuranceService.create({
       ...createInsuranceInput,
       user: userId,
@@ -51,7 +49,6 @@ export class InsuranceResolver {
   async getUser(
     @Parent() insurance: InsuranceDocument,
   ): Promise<Partial<User>> {
-    this.logger.debug(insurance);
     const { user } = await this.userService.findById(insurance.user.toString());
     return user;
   }
